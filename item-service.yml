@@ -1,7 +1,7 @@
 server:
-  port: 8083
+  port: 0
 eureka:
   instance:
-    instance-id: ${spring.application.name}:${random.uuid}
+    instance-id: ${spring.application.name}:${server.port}
 welcome:
   message: hello world!
